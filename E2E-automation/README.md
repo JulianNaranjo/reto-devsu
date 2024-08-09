@@ -2,6 +2,12 @@
 
 This is the solution to a technical test, which consists of authenticating on the page https://www.saucedemo.com/, adding two products to the cart and then finalizing the purchase order.
 
+## Stack
+
+- Selenium
+- TestNG
+- log4j2
+
 ## Folder Structure
 
 The workspace contains the following folder structure, where:

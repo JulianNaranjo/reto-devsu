@@ -2,6 +2,10 @@
 
 This is the solution to a technical API test, which consists of using the services: https://api.demoblaze.com/signup for user registration and https://api.demoblaze.com/login for login.
 
+## Stack
+
+- Cypress
+
 ## Folder Structure
 
 The workspace contains the following folder structure, where:
