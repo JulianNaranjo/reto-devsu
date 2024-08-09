@@ -1,0 +1,17 @@
+{
+  "name": "apiautomation",
+  "version": "1.0.0",
+  "description": "Prueba tecnica Devsu",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Julian Naranjo",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.13.2"
+  }
+}
