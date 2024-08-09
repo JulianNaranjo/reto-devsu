@@ -1,5 +1,6 @@
 package org.devsu.julian_naranjo.saucedemo.pages;
 
+import io.qameta.allure.Step;
 import org.devsu.julian_naranjo.saucedemo.model.User;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -28,6 +29,7 @@ public class SwagLabsLogin extends BasePage{
         PageFactory.initElements(driver, this);
     }
 
+    @Step("Open Swag Labs page ")
     public SwagLabsLogin openPage(){
         driver.get(BASE_URL);
         return this;
@@ -48,6 +50,7 @@ public class SwagLabsLogin extends BasePage{
         loginButton.click();
     }
 
+    @Step("Login process")
     public SwagLabsInventory login(User user){
         setUserName(user.getUserName());
         setPassword(user.getPassword());

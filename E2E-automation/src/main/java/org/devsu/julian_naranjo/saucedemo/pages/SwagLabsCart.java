@@ -1,5 +1,6 @@
 package org.devsu.julian_naranjo.saucedemo.pages;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -23,10 +24,10 @@ public class SwagLabsCart extends BasePage{
 
     private void selectedCheckout(){
         wait.until(ExpectedConditions.elementToBeClickable(checkout));
-        System.out.println("esto es una prueba");
         checkout.click();
     }
 
+    @Step("Confirm the Order")
     public PersonalInformation confirmOrder(){
         selectedCheckout();
         return new PersonalInformation(driver);

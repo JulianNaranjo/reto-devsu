@@ -3,6 +3,9 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 
+allure-results
+allure-report
+
 ### IntelliJ IDEA ###
 .idea/
 ### Eclipse ###

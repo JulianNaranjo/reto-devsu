@@ -1,5 +1,6 @@
 package org.devsu.julian_naranjo.saucedemo.pages;
 
+import io.qameta.allure.Step;
 import org.devsu.julian_naranjo.saucedemo.model.Customer;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -50,6 +51,7 @@ public class PersonalInformation extends BasePage{
         continueButton.click();
     }
 
+    @Step("Fill customer information")
     public Overview setPersonalInformation(Customer customer){
         setFirstName(customer.getFirstName());
         setLastName(customer.getLastName());

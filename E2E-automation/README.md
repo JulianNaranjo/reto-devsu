@@ -7,6 +7,7 @@ This is the solution to a technical test, which consists of authenticating on th
 - Selenium
 - TestNG
 - log4j2
+- allure
 
 ## Folder Structure
 
@@ -24,6 +25,7 @@ The workspace contains the following folder structure, where:
 Install:
 - Java
 - Maven
+- allure
 
 ## Run command
 
@@ -32,6 +34,10 @@ mvn -Dbrowser=chrome -Denvironment=qa clean test
 Where:
 - `-Dbrowser`: It is the system variable that indicates the driver to use, it can be Chrome or Firefox.
 - `-Denvironment`: It is the system variable that indicates the .properties file to use, in order to be able to run tests depending on the environment in which I am and I can parameterize the user and password, in this case only one qa.properties file has been defined
+
+## Generate report
+
+- allure serve
 
 ## Consideration
 

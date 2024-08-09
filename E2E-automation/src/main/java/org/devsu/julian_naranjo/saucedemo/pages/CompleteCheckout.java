@@ -1,5 +1,6 @@
 package org.devsu.julian_naranjo.saucedemo.pages;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -25,6 +26,7 @@ public class CompleteCheckout extends BasePage{
         return completeOrder.getText();
     }
 
+    @Step("Complete the order")
     public String completeOrder(){
         return getCompleteOrder();
     }

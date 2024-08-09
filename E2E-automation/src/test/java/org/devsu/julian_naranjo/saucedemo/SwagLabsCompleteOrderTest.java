@@ -1,5 +1,6 @@
 package org.devsu.julian_naranjo.saucedemo;
 
+import io.qameta.allure.Feature;
 import org.devsu.julian_naranjo.saucedemo.model.Customer;
 import org.devsu.julian_naranjo.saucedemo.model.User;
 import org.devsu.julian_naranjo.saucedemo.pages.SwagLabsLogin;
@@ -14,6 +15,7 @@ public class SwagLabsCompleteOrderTest extends BaseTest {
     private  final String completeOrder = "Thank you for your order!";
 
     @Test
+    @Feature("Complete Order")
     public void completeOrder(){
         User testUser = UserCreator.credentials();
         Customer testCustomer = CustomerCreator.personalInformationCustomer();

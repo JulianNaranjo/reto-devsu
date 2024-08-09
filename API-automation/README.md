@@ -16,7 +16,8 @@ The workspace contains the following folder structure, where:
 
 Install:
 - Node
-- Run npm i
+Run:
+- npm i
 
 ## Run command
 

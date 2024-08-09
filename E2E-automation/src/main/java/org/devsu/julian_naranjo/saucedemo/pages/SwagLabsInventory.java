@@ -1,5 +1,6 @@
 package org.devsu.julian_naranjo.saucedemo.pages;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -41,6 +42,7 @@ public class SwagLabsInventory extends BasePage{
         cart.click();
     }
 
+    @Step("Add products and go to the cart")
     public SwagLabsCart goCart(){
         addBackpackItemTocart();
         logger.info("Backpack added to cart successfully");
